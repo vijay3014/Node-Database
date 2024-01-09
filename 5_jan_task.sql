@@ -30,4 +30,12 @@ select*from customers where contactFirstName like 's____';
 
 select*from customers where contactFirstName like '________ ';
 
+select * from customers where customerName like 'a%e';  
+
+select * from customers where customerName like 'ee%';
+
+select jobTitle , count(*) from employees group by jobTitle;
+
+select state, max(creditLimit) from customers group by state;
+
 
